@@ -1,0 +1,15 @@
+generated: '2026-07-18'
+method: searched
+source: https://skills.internetcomputer.org/
+description: >-
+  The DFINITY Foundation publishes a first-party Agent Skills library at
+  skills.internetcomputer.org that equips coding agents (Claude Code, Codex,
+  Copilot, Cursor, Perplexity) with ICP-specific skills for building on the
+  Internet Computer. This is a provider-published skill surface captured
+  verbatim by reference rather than generated, because ICP exposes no REST
+  OpenAPI to ground synthesized skills against.
+published_library:
+  name: Skills for AI agents
+  url: https://skills.internetcomputer.org/
+  agents: [Claude Code, Codex, GitHub Copilot, Cursor, Perplexity]
+skills: []

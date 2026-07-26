@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: https://internetcomputer.org/docs/, https://internetcomputer.org/quick-start/
+clis:
+  - name: icp
+    canonical: true
+    description: >-
+      The canonical Internet Computer developer CLI for scaffolding, building,
+      and deploying canisters to the network (successor to dfx as the promoted
+      developer tool per the ICP quick-start and llms.txt guidance).
+    docs: https://internetcomputer.org/docs/
+    install:
+      - method: quick-start
+        command: See https://internetcomputer.org/quick-start/
+  - name: dfx
+    canonical: false
+    description: >-
+      The DFINITY canister SDK command-line tool used to create, build, deploy,
+      and manage Internet Computer projects and canisters locally and on mainnet.
+    docs: https://internetcomputer.org/docs/building-apps/developer-tools/dfx-json-reference
+    repository: https://github.com/dfinity/sdk
+    install:
+      - method: dfxvm
+        command: 'sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"'
+  - name: quill
+    canonical: false
+    description: >-
+      Minimalist, cold-wallet-friendly CLI for interacting with the Network
+      Nervous System (NNS) and ledger — signing and submitting governance,
+      staking, and ICP transfer messages offline.
+    repository: https://github.com/dfinity/quill
+command_groups:
+  - group: project
+    commands: [new, build, deploy, start, stop]
+  - group: canister
+    commands: [call, create, install, status, delete]
+  - group: identity
+    commands: [new, use, list, get-principal]
+  - group: ledger
+    commands: [balance, transfer, account-id]
+  - group: wallet
+    commands: [balance, send, redeem-faucet-coupon]

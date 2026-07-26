@@ -1,0 +1,77 @@
+generated: '2026-07-18'
+method: searched
+source: npm (@dfinity scope), crates.io (dfinity/agent-rs, dfinity/cdk-rs), PyPI
+notes: >-
+  First-party Internet Computer client/developer libraries maintained by the
+  DFINITY Foundation. JavaScript/TypeScript libraries live under the @dfinity npm
+  scope (repo github.com/dfinity/icp-js-core and related). Rust libraries are on
+  crates.io (agent + Canister Developer Kit). The Python agent library ic-py is
+  community-maintained (Rocklabs), not first-party, and is marked official:false.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@dfinity/agent"
+    url: https://www.npmjs.com/package/@dfinity/agent
+    install: npm install @dfinity/agent
+    version: 3.4.3
+    repository: https://github.com/dfinity/icp-js-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@dfinity/candid"
+    url: https://www.npmjs.com/package/@dfinity/candid
+    install: npm install @dfinity/candid
+    version: 3.4.3
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@dfinity/principal"
+    url: https://www.npmjs.com/package/@dfinity/principal
+    install: npm install @dfinity/principal
+    version: 3.4.3
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@dfinity/auth-client"
+    url: https://www.npmjs.com/package/@dfinity/auth-client
+    install: npm install @dfinity/auth-client
+    version: 3.4.3
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@dfinity/identity"
+    url: https://www.npmjs.com/package/@dfinity/identity
+    install: npm install @dfinity/identity
+    version: 3.4.3
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@dfinity/ledger-icp"
+    url: https://www.npmjs.com/package/@dfinity/ledger-icp
+    install: npm install @dfinity/ledger-icp
+    version: 9.1.0
+    official: true
+  - language: rust
+    registry: crates.io
+    name: ic-agent
+    url: https://crates.io/crates/ic-agent
+    install: cargo add ic-agent
+    version: 0.49.0
+    repository: https://github.com/dfinity/agent-rs
+    official: true
+  - language: rust
+    registry: crates.io
+    name: ic-cdk
+    url: https://crates.io/crates/ic-cdk
+    install: cargo add ic-cdk
+    version: 0.20.2
+    repository: https://github.com/dfinity/cdk-rs
+    official: true
+  - language: python
+    registry: pypi
+    name: ic-py
+    url: https://pypi.org/project/ic-py/
+    install: pip install ic-py
+    version: 1.0.1
+    repository: https://github.com/rocklabs-io/ic-py
+    official: false

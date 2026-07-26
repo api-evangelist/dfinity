@@ -1,8 +1,17 @@
 aid: dfinity
 name: DFINITY
-description: DFINITY is a company surfaced as a portfolio company of a16z, multicoin-capital, polychain
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  The DFINITY Foundation is a Swiss-based not-for-profit research organization that
+  created and stewards the Internet Computer Protocol (ICP), a public, decentralized
+  "frontier cloud" that hosts software and data entirely inside a mathematical network
+  protocol. Applications run as canisters (WebAssembly smart contracts with persistent
+  state, native HTTP, and a reverse gas model paid in Cycles) that are tamperproof,
+  unstoppable, and free from vendor lock-in. ICP uses Chain Key cryptography and Chain
+  Fusion to transact natively on Bitcoin and Ethereum without bridges, and is governed
+  on-network by the Network Nervous System (NNS). DFINITY publishes first-party developer
+  tooling — JavaScript/TypeScript agent libraries under the @dfinity npm scope, Rust
+  agent and Canister Developer Kit crates, the icp/dfx CLIs, and an AI agent skills
+  library — plus a public HTTP interface for reading from and calling canisters.
 url: https://raw.githubusercontent.com/api-evangelist/dfinity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +21,43 @@ x-backed-by:
 - polychain
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://github.com/dfinity.png
 tags:
 - Company
-apis: []
+- Blockchain
+- Internet Computer
+- ICP
+- Web3
+- Canisters
+- Smart Contracts
+- Decentralized Cloud
+- Cryptography
+- Developer Tools
+apis:
+- name: Internet Computer HTTP Interface
+  description: >-
+    The public HTTP interface (agent/gateway API) for reading state from and submitting
+    calls to Internet Computer canisters, consumed by the @dfinity agent libraries, the
+    Rust ic-agent, and the icp/dfx CLIs.
+  humanURL: https://docs.internetcomputer.org/
+  baseURL: https://icp-api.io
+  properties:
+  - type: Documentation
+    url: https://docs.internetcomputer.org/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +66,40 @@ maintainers:
 common:
 - type: Website
   url: https://dfinity.org
+- type: DeveloperPortal
+  url: https://internetcomputer.org/build/
+- type: Documentation
+  url: https://docs.internetcomputer.org/
+- type: APIReference
+  url: https://docs.internetcomputer.org/
+- type: GettingStarted
+  url: https://internetcomputer.org/quick-start/
+- type: Roadmap
+  url: https://internetcomputer.org/roadmap/
+- type: Blog
+  url: https://internetcomputer.org/news/
+- type: GitHubOrganization
+  url: https://github.com/dfinity
+- type: Support
+  url: https://forum.dfinity.org
+- type: LLMsTxt
+  url: llms/dfinity-llms.txt
+- type: Packages
+  url: packages/dfinity-packages.yml
+- type: SDKs
+  url: packages/dfinity-packages.yml
+- type: CLI
+  url: cli/dfinity-cli.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DomainSecurity
+  url: security/dfinity-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/dfinity-vulnerability-disclosure.yml
+- type: Security
+  url: https://dfinity.org/security/responsible-disclosure
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
